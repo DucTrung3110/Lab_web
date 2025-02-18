@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Đăng Ký</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <label>Họ và tên:</label>
+      <input type="text" />
+
+      <fieldset>
+        <legend>Giới tính</legend>
+        <input type="radio" name="gender" id="male" /><label for="male"
+          >Nam</label
+        >
+        <input type="radio" name="gender" id="female" /><label for="female"
+          >Nữ</label
+        >
+      </fieldset>
+
+      <label>Ngày sinh:</label>
+      <input type="date" />
+
+      <label>Điểm:</label>
+      <input type="number" min="0" max="10" step="0.25" value="0.25" />
+
+      <label for="career">Nghề nghiệp:</label>
+      <input list="careers" id="career" name="career" />
+      <datalist id="careers">
+        <option value="Giáo viên"></option>
+        <option value="Bác sĩ"></option>
+        <option value="Kỹ sư"></option>
+        <option value="Lập trình viên"></option>
+        <option value="Luật sư"></option>
+      </datalist>
+
+      <fieldset>
+        <legend>Sở thích</legend>
+        <input type="checkbox" id="sport" /><label for="sport">Thể thao</label>
+        <input type="checkbox" id="travel" /><label for="travel">Du lịch</label>
+        <input type="checkbox" id="music" /><label for="music">Âm nhạc</label>
+        <input type="checkbox" id="food" /><label for="food">Ẩm thực</label>
+      </fieldset>
+
+      <label>Ghi chú:</label>
+      <textarea rows="4"></textarea>
+
+      <div class="button-group">
+        <button type="submit" class="register">Đăng ký</button>
+        <button type="reset" class="reset">Nhập lại</button>
+      </div>
+    </form>
+  </body>
+</html>

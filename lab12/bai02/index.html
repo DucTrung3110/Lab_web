@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Player</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+      .container {
+        display: flex;
+        gap: 10px;
+      }
+      .video-frame {
+        width: 640px;
+        height: 360px;
+        border: 2px solid #333;
+      }
+      .thumbnails {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .thumbnails a img {
+        width: 180px;
+        height: 108px;
+        border: 2px solid #333;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Khung video -->
+      <iframe class="video-frame" name="videoFrame" src="video1.html"></iframe>
+
+      <!-- Danh sách ảnh đại diện -->
+      <div class="thumbnails">
+        <a href="video1.html" target="videoFrame">
+          <img
+            src="./image/Blue And Red Futuristic Game YouTube Channel Art (9).png"
+            alt="Ảnh 1"
+          />
+        </a>
+        <a href="video2.html" target="videoFrame">
+          <img src="./image/1 Tuần.png" alt="Ảnh 2" />
+        </a>
+        <a href="video3.html" target="videoFrame">
+          <img src="./image/Hi.png" alt="Ảnh 3" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

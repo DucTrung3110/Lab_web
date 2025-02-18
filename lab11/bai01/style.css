@@ -1,0 +1,18 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid green;
+}
+
+td,
+th {
+  text-align: center;
+  padding: 10px;
+}
+
+tr.border {
+  color: white;
+  border: none;
+  border-bottom: green;
+  background-color: green;
+}

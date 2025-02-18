@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gạch Dọc</title>
+    <style>
+      .vertical-line {
+        width: 1px;
+        height: 100px;
+        background-color: black;
+        margin: 0 auto;
+      }
+      .flex-container {
+        display: flex;
+        align-items: center;
+      }
+      .flex-container .vertical-divider {
+        width: 1px;
+        height: 50px;
+        background-color: black;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Cách 1</h3>
+    <div class="vertical-line"></div>
+
+    <h3>Cách 2</h3>
+    <div
+      style="border-left: 1px solid black; height: 100px; margin: 0 auto"
+    ></div>
+
+    <h3>Cách 3</h3>
+    <div class="flex-container">
+      <div>Trái</div>
+      <div class="vertical-divider"></div>
+      <div>Phải</div>
+    </div>
+  </body>
+</html>
